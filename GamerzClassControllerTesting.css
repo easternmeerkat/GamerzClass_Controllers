@@ -1,11 +1,11 @@
 .controller.custom{
-    background-image: url(https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg);
+    background-image: url(https://rawgit.com/HawkyYT/nvidia-shield-gamepad-viewer-skin/master/base.svg);
     height: 692px;
     width: 758px;
 }
 
 .custom.disconnected {
-    background-image: url(https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg);
+    background-image: url(https://rawgit.com/HawkyYT/nvidia-shield-gamepad-viewer-skin/master/disconnected.svg);
 }
 
 .custom.disconnected div {
