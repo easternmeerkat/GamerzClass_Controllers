@@ -1,11 +1,10 @@
-/*BEGIN Xbox One Controller Styling*/
 .controller.custom{
-    background: url(http://www.mandysam.com/img/random.jpg); 
+    background-image: url(http://www.mandysam.com/img/random.jpg); 
     height: 630px;
     width: 750px;
 }
 .custom.white{
-    background: url(http://www.mandysam.com/img/random.jpg);
+    background-image: url(http://www.mandysam.com/img/random.jpg);
 }
 .custom.disconnected {
     
@@ -230,4 +229,3 @@
 .custom{
     background: no-repeat center;
 }
-/*END Xbox One Controller Styling*/
