@@ -1,11 +1,11 @@
 /*BEGIN Xbox One Controller Styling*/
 .controller.custom{
-    background: url(https://static.wikia.nocookie.net/the-gay-motherland/images/5/52/Fuzzus_boius.jpg); 
+    background: url(http://www.mandysam.com/img/random.jpg); 
     height: 630px;
     width: 750px;
 }
 .custom.white{
-    background: url(https://static.wikia.nocookie.net/the-gay-motherland/images/5/52/Fuzzus_boius.jpg);
+    background: url(http://www.mandysam.com/img/random.jpg);
 }
 .custom.disconnected {
     
@@ -26,7 +26,7 @@
 .custom .trigger{
     width: 88px;
     height: 121px;
-    background: url(https://static.wikia.nocookie.net/the-gay-motherland/images/5/52/Fuzzus_boius.jpg);
+    background: url(http://www.mandysam.com/img/random.jpg);
     opacity: 0;
 }
 .custom .trigger.left{
@@ -96,7 +96,7 @@
     display: none;
 }
 .custom .back, .custom .start{
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/start-select.svgz);
+    background: url(http://www.mandysam.com/img/random.jpg);
     width: 33px;
     height: 33px;
     opacity: 0;
@@ -164,7 +164,7 @@
 }
 .custom .stick{
     position: absolute;
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/stick.svgz);
+    background: url(http://www.mandysam.com/img/random.jpg);
     background-position: -85px 0;
     height: 83px;
     width: 83px;
