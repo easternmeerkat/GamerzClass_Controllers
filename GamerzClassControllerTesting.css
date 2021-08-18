@@ -1,235 +1,249 @@
-/*BEGIN Xbox One Controller Styling*/
 .controller.custom{
-    background: url(https://static.wikia.nocookie.net/the-gay-motherland/images/5/52/Fuzzus_boius.jpg);
-    height: 630px;
-    width: 750px;
-    margin-left: -375px;
-    margin-top: -285px;
+    background-image: url(base.svg);
+    height: 692px;
+    width: 758px;
 }
-.custom.white{
-    background: url(https://static.wikia.nocookie.net/the-gay-motherland/images/5/52/Fuzzus_boius.jpg);
-}
+
 .custom.disconnected {
-    
+    background-image: url(disconnected.svg);
 }
+
 .custom.disconnected div {
     display: none;
 }
-.custom .triggers{
-    width: 520px;
-    height: 121px;
+
+.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+    width: 556px;
+    height: 119px;
     position: absolute;
-    left: 126px;
-    top: 239px;
-    background: url(http://i.imgur.com/GaV5RBy.png);
-    /* background-position: -152px 0px; */
-    -webkit-clip-path: 50%;
+    left: 101px;
 }
-.custom .trigger{
-    width: 88px;
-    height: 121px;
-    background: url(https://static.wikia.nocookie.net/the-gay-motherland/images/5/52/Fuzzus_boius.jpg);
+
+.custom .trigger {
+    width:118px;
+    height:119px;
+    background: url(trigger.svg);
+    opacity: 1;
+}
+
+.custom .trigger[data-value="0"] {
     opacity: 0;
 }
-.custom .trigger.left{
+
+.custom .trigger.left {
     float: left;
-    background-position:0 0;
+    background-position: 0 0;
 }
-.custom .trigger.right{
+
+.custom .trigger.right {
     float: right;
     transform: rotateY(180deg);
 }
-.custom .bumper{
-    width: 170px;
-    height: 61px;
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/bumper.svgz);
+
+.custom .bumpers {
+    width: 542px;
+    height: 53px;
+    left: 108px;
+    position: absolute;
+	top: 111px;
+}
+
+.custom .bumper {
+    width: 124px;
+    height: 53px;
+    background: url(bumper.svg);
     opacity: 0;
 }
-.custom .bumpers{
-    position: absolute;
-    width: 536px;
-    height: 61px;
-    left: 107px;
-    top: 129px;
-    display: none;
-}
-.custom .bumper.pressed{
+
+.custom .bumper.pressed {
     opacity: 1;
 }
-.custom .bumper.left{
+
+.custom .bumper.left {
     float: left;
 }
-.custom .bumper.right{
+
+.custom .bumper.right {
     float: right;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-.custom .quadrant{
-    position: absolute;
-    /* background: url(http://mrmcpowned.com/gamepad/xbox-assets/quadrant.svgz); */
-    height: 45px;
-    width: 45px;
-    top: 258px;
-    left: 354px;
-    z-index: 0;
-}
-.custom .p0{
+
+.custom .p0 {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
-.custom .p1{
+
+.custom .p1 {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-.custom .p2{
+
+.custom .p2 {
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
 }
-.custom .p3{
+
+.custom .p3 {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.custom .arrows{
+
+.custom .arrows {
     position: absolute;
-    width: 141px;
-    height: 33px;
-    top: 264px;
-    left: 306px;
-    display: none;
+    width: 216px;
+    height: 36px;
+    top: 437px;
+    left: 276px;
 }
-.custom .back, .custom .start{
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/start-select.svgz);
-    width: 33px;
-    height: 33px;
+
+.custom .back {
+    background: url(start-select.svg);
+    width: 77px;
+    height: 36px;
     opacity: 0;
 }
-.custom .back.pressed, .custom .start.pressed{
+.custom .start {
+    background: url(start-select.svg);
+    width: 62px;
+    height: 36px;
+    opacity: 0;
+}
+.custom .back.pressed, .start.pressed {
     opacity: 1;
 }
-.custom .back{
+
+.custom .back {
+    float: left;
+	margin-right: -5px;
+}
+
+.custom .start {
+    background-position: -77px 0px;
     float: left;
 }
-.custom .start{
-    background-position: 33px 0px;
-    float: right;
-}
-.custom .abxy{
+
+.custom .abxy {
     position: absolute;
-    width: 157px;
-    height: 164px;
-    top: 231px;
-    left: 388px;
-    background: url(http://i.imgur.com/tE4M2o4.png);
-    /* background-size: contain; */
+    width: 130px;
+    height: 150px;
+	top: 181px;
+    left: 516px;
 }
-.custom .button{
+
+.custom .button {
     position: absolute;
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/abxy.svgz);
-    width: 48px;
-    height: 48px;
+    background: url(buttons.svg);
+    width: 50px;
+    height: 50px;
+    /* display: none; */
 }
-.custom .button.pressed{
-    background-position-y: -48px;
-    margin-top: 5px;
+
+.custom .button.pressed {
+    background-position-y: -50px;
     opacity: 1;
 }
-.custom .a{
+
+.custom .a {
     background-position: 0 0;
-    top: 108px;
-    left: 55px;
+    top: 100px;
+    left: 50px;
 }
-.custom .b{
-    background-position: -49px 0;
-    top: 57px;
-    right: 3px;
+
+.custom .b {
+    background-position: -50px 0;
+    top: 50px;
+    right: -20px;
 }
-.custom .x{
-    background-position: -98px 0;
-    top: 57px;
-    left: 4px;
+
+.custom .x {
+    background-position: -100px 0;
+    top: 50px;
+    left: 0px;
 }
-.custom .y{
-    background-position: 48px 0;
-    left: 55px;
-    top: 5px;
+
+.custom .y {
+    background-position: -150px 0;
+    top: 0px;
+    left: 50px;
 }
-.custom .sticks{
+
+.custom .sticks {
     position: absolute;
-    width: 137px;
-    height: 139px;
-    top: 239px;
-    left: 224px;
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/base.svgz);*/;
-    background-position: -117px -214px;
-    -webkit-clip-path: circle(50% at center);
-    clip-path: circle(50% at center);
+    width: 100px;
+    height: 100px;
+    top: 331px;
+    left: 221px;
 }
-.custom .stick{
+
+.custom .stick {
     position: absolute;
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/stick.svgz);
-    background-position: -85px 0;
-    height: 83px;
-    width: 83px;
+    background: url(stick.svg);
+    background-position: 0px 0;
+    height: 84px;
+    width: 84px;
 }
-.custom .stick.pressed{
-    background-position: 0 0;
+
+.custom .stick.pressed {
+    background-position: -84px 0px;
 }
-.custom .stick.left{
-    top: 24px;
-    left: 27px;
+
+.custom .stick.left {
+    top: 0;
+    left: 0;
 }
-.custom .stick.right{
-    top: 113px;
-    left: 288px;
-    display: none;
+
+.custom .stick.right {
+    top: 0px;
+    left: 232px;
 }
-.custom .dpad{
+
+.custom .dpad {
     position: absolute;
-    width: 110px;
-    height: 111px;
-    top: 345px;
-    left: 223px;
-    display: none;
+    width: 114px;
+    height: 113px;
+    top: 199px;
+    left: 114px;
 }
-.custom .face{
-    background: url(http://mrmcpowned.com/gamepad/xbox-assets/dpad.svgz);
+
+.custom .face {
+    background: url(dpad.svg);
     position: absolute;
     opacity: 0;
 }
-.custom .face.pressed{
+
+.custom .face.pressed {
     opacity: 1;
 }
-.custom .face.up{
-    background-position: 34px 0;
-    left: 38px;
+
+.custom .face.up {
+    background-position: 0px 0px;
+    left: 35px;
     top: 0px;
-    width: 34px;
-    height: 56px;
+    width: 44px;
+    height: 57px;
 }
-.custom .face.down{
-    left: 38px;
+
+.custom .face.down {
+    background-position: -44px 0px;
+	left: 35px;
     bottom: 0;
-    width: 34px;
-    height: 56px;
+    width: 44px;
+    height: 57px;
 }
-.custom .face.left{
-    background-position: 0 -93px;
-    width: 55px;
-    height: 35px;
-    top: 38px;
+
+.custom .face.left {
+    background-position: -88px 0px;
+    width: 56px;
+    height: 55px;
+    top: 22px;
     left: 0;
 }
-.custom .face.right{
-    background-position: 0 -57px;
-    width: 55px;
-    height: 35px;
-    top: 38px;
+
+.custom .face.right {
+    background-position: -146px 0px;
+    width: 56px;
+    height: 55px;
+    top: 22px;
     right: 0;
 }
-.custom.half{
-    margin-top: -315px;
-}
-.custom{
-    background: no-repeat center;
-}
-/*END Xbox One Controller Styling*/
